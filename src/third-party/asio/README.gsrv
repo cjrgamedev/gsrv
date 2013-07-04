@@ -1,0 +1,19 @@
+Name: Asio is a cross-platform C++ library for network and low-level I/O programming
+Short Name: asio
+URL: http://sourceforge.net/projects/asio/files/asio/1.5.3%20%28Development%29/asio-1.5.3.tar.gz/download
+Version: 1.5.3
+Date: Mar 22, 2011
+License: Boost Software License 
+License File: LICENSE_1_0.txt
+Description:
+Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a
+consistent asynchronous model using a modern C++ approach. 
+
+Local Modifications:
+
+* Removed aclocal.m4 compile config.guess config.sub configure configure.ac  depcomp doc/ install-sh Makefile.am
+  Makefile.in missing src/ as this is a header only library
+ 
+* Added noexcept keyword to name methods in error_code.ipp and error.ipp for
+  compiling with C++11 support enabled.
+
