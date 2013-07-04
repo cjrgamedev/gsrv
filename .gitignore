@@ -11,3 +11,10 @@
 *.lai
 *.la
 *.a
+
+# build directory
+build/
+
+# vim backups
+*~
+
